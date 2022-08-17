@@ -80,9 +80,8 @@ jobs:
       - name: Check file is set
         run: |
           EXPECTED_FILE_CONTENT="SECRET_KEY=SECRET_VALUE
-          SECRET_KEY2=SECRET_VALUE2
-          "
-          
+          SECRET_KEY2=SECRET_VALUE2"
+
           IFS= read -rd '' ACTUAL_FILE_CONTENT < ./.env || true
 
           if [ "$EXPECTED_FILE_CONTENT" != "$ACTUAL_FILE_CONTENT" ]; then
