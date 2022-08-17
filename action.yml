@@ -1,0 +1,33 @@
+name: 'Configure AWS Secrets Manager'
+description: 'A Github action to load secrets from AWS Secrets Manager into the environment'
+author: 'muchobien'
+
+branding:
+  icon: cloud
+  color: orange
+
+inputs:
+  secret-id:
+    description: 'The ARN or name of the secret to retrieve.'
+    required: true
+  version-id:
+    description: 'The unique identifier of the version of the secret to retrieve.'
+    required: false
+  stage:
+    description: 'The staging label of the version of the secret to retrieve.'
+    required: false
+  overrides:
+    description: 'Should override existing environment variables'
+    required: false
+    default: 'false'
+  exporters:
+    description: 'List of exporters to use: env, output, file'
+    required: false
+    default: 'env,output'
+  file-path:
+    description: 'The path to the file to write the secrets to.'
+    required: false
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
