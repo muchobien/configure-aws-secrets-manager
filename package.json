@@ -1,6 +1,6 @@
 {
   "name": "@muchobien/configure-aws-secrets-manager",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "description": "A Github action to load secrets from AWS Secrets Manager into the environment",
   "main": "lib/main.js",
