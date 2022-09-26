@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@types/jest": "29.0.3",
-    "@types/node": "18.7.19",
+    "@types/node": "18.7.23",
     "@typescript-eslint/parser": "5.38.0",
     "@vercel/ncc": "0.34.0",
     "aws-sdk-client-mock": "2.0.0",
