@@ -13,7 +13,7 @@ Add the following step to your workflow:
 
 ```yaml
 - name: Configure AWS Secrets Manager
-  uses: muchobien/configure-aws-secrets-manager@v1
+  uses: muchobien/configure-aws-secrets-manager@v2
   with:
     secret-id: mysecret
     version-id: someversion # optional
