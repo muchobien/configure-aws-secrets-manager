@@ -6,7 +6,7 @@ import {
   debug
 } from '@actions/core'
 import {writeFile} from 'node:fs/promises'
-import {Exporters} from './input'
+import type {Exporters} from './input'
 
 export class Output {
   debug = debug

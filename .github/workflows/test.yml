@@ -1,20 +1,20 @@
-name: "build-test"
+name: 'build-test'
 on: # rebuild any PRs and main branch changes
   pull_request:
   push:
     branches:
       - main
-      - "releases/*"
+      - 'releases/*'
 
 jobs:
   build: # make sure build/ci work properly
     if: github.actor != 'dependabot[bot]'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set Node.js 16.x
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 16
           cache: 'yarn'
@@ -39,9 +39,9 @@ jobs:
           SERVICES: secretsmanager
         ports:
           - 4566:4566
-    
+
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Setup some sample credentials
         run: |
           aws --endpoint-url="$AWS_SECRETS_MANAGER_ENDPOINT_URL" secretsmanager create-secret \
