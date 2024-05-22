@@ -1,4 +1,3 @@
-/* eslint-disable filenames/match-regex */
 import * as core from '@actions/core'
 import fs from 'node:fs/promises'
 import {
