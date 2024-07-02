@@ -29,7 +29,7 @@
     "@aws-sdk/client-secrets-manager": "3.609.0"
   },
   "devDependencies": {
-    "@eslint/js": "9.5.0",
+    "@eslint/js": "9.6.0",
     "@types/jest": "29.5.12",
     "@types/node": "20.14.9",
     "@vercel/ncc": "0.38.1",
