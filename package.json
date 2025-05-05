@@ -34,7 +34,7 @@
     "@types/node": "20.14.12",
     "@vercel/ncc": "0.38.3",
     "aws-sdk-client-mock": "4.1.0",
-    "eslint": "9.25.0",
+    "eslint": "9.26.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-github": "4.10.2",
     "eslint-plugin-jest": "28.11.0",
