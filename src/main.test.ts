@@ -10,6 +10,7 @@ import {run} from './main'
 jest.mock('@actions/core')
 jest.mock('node:fs/promises', () => {
   return {
+    ...jest.requireActual('node:fs/promises'),
     writeFile: jest.fn()
   }
 })
