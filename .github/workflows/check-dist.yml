@@ -23,19 +23,22 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version-file: '.nvmrc'
-          cache: 'yarn'
+          cache: 'pnpm'
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
       - name: Rebuild the dist/ directory
         run: |
-          yarn build
-          yarn package
+          pnpm build
+          pnpm package
 
       - name: Compare the expected and actual dist/ directories
         run: |
