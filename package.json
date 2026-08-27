@@ -32,7 +32,7 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "2.0.3",
-    "@aws-sdk/client-secrets-manager": "3.1116.0"
+    "@aws-sdk/client-secrets-manager": "3.1117.0"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
