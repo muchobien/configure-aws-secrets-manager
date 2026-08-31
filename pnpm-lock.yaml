@@ -12,8 +12,8 @@ importers:
         specifier: 2.0.3
         version: 2.0.3
       '@aws-sdk/client-secrets-manager':
-        specifier: 3.1117.0
-        version: 3.1117.0
+        specifier: 3.1121.0
+        version: 3.1121.0
     devDependencies:
       '@eslint/js':
         specifier: 10.0.1
@@ -78,8 +78,8 @@ packages:
   '@actions/io@2.0.0':
     resolution: {integrity: sha512-Jv33IN09XLO+0HS79aaODsvIRyduiF7NY/F6LYeK5oeUmrsz7aFdRphQjFoESF4jS7lMauDOttKALcpapVDIAg==}
 
-  '@aws-sdk/client-secrets-manager@3.1117.0':
-    resolution: {integrity: sha512-nRBpwu2XHdLMoeZTA8BiemOrX4LbDiz72N7dwmI64DIZASShyboB2Qmdz8MqVjR0NcljqnQr+yGrInfcy1CZQw==}
+  '@aws-sdk/client-secrets-manager@3.1121.0':
+    resolution: {integrity: sha512-kx66Imv5DomVdd5uwai10Dhf0zZg9Z3EODxJCYRGjmaD0GR08GkvuIPPIqE+ZmpHANCWbur9UKpgyXGJzk60pg==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/core@3.977.9':
@@ -2732,7 +2732,7 @@ snapshots:
 
   '@actions/io@2.0.0': {}
 
-  '@aws-sdk/client-secrets-manager@3.1117.0':
+  '@aws-sdk/client-secrets-manager@3.1121.0':
     dependencies:
       '@aws-sdk/core': 3.977.9
       '@aws-sdk/credential-provider-node': 3.972.81
